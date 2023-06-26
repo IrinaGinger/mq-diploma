@@ -40,11 +40,16 @@
             <a class="menu-link" href="#0">Контакты</a>
           </li>
         </ul>
+
+        <div class="burger-menu">
+          <button class="menu-button">
+            <span class="menu-button-label">открыть меню</span>
+          </button>
+        </div>
       </nav>
       
       <h1 class="header-title">
-        Блог о творчестве, спорте,<br>
-        и образе жизни
+        Блог о творчестве, спорте, и образе жизни
       </h1>
     </div>
   </header>
@@ -52,7 +57,7 @@
   <!-- блок трендов -->
 
   <section class="trends-section">
-    <h2 class="section-title page-section-title">Сейчас в тренде</h2>
+    <h2 class="section-title page-section-title trends-title">Сейчас в тренде</h2>
     
     <div class="trends">
       <article class="trends-item item1">
@@ -67,7 +72,7 @@
           </ul>
           <h2 class="article-title trends-article-title">
             <a class="trends-title-link" href="#0">
-              Сейчас в тренде: сад на&nbspподоконнике
+              Сейчас в тренде: сад на подоконнике
             </a>
           </h2>
         </div>
@@ -154,7 +159,7 @@
           </h2>
                  
           <div class="article-date-author"> 
-            <time class="article-datetime">10 июня 2019</time>
+            <time class="article-datetime" datetime="2019-06-10T00:00">10 июня 2019</time>
             <span class="article-author">Неизвестный автор</span>
           </div>
           
@@ -187,7 +192,7 @@
           </h2>
                 
           <div class="article-date-author"> 
-            <time class="article-datetime">10 июня 2019</time>
+            <time class="article-datetime" datetime="2019-06-10T00:00">10 июня 2019</time>
             <span class="article-author">Неизвестный автор</span>
           </div>
           
@@ -217,7 +222,7 @@
           </h2>
 
           <div class="article-date-author"> 
-            <time class="article-datetime">10 июня 2019</time>
+            <time class="article-datetime" datetime="2019-06-10T00:00">10 июня 2019</time>
             <span class="article-author">Неизвестный автор</span>
           </div>
           
@@ -253,7 +258,7 @@
           </h2>
          
           <div class="article-date-author"> 
-            <time class="article-datetime">10 июня 2019</time>
+            <time class="article-datetime" datetime="2019-06-10T00:00">10 июня 2019</time>
             <span class="article-author">Неизвестный автор</span>
           </div>
           
@@ -289,7 +294,7 @@
           </h2>
          
           <div class="article-date-author"> 
-            <time class="article-datetime">10 июня 2019</time>
+            <time class="article-datetime" datetime="2019-06-10T00:00">10 июня 2019</time>
             <span class="article-author">Неизвестный автор</span>
           </div>
           
@@ -314,7 +319,7 @@
         <article class="new-post">
           <img class="new-post-image" src="images/2.jpg" alt="10 мест">
           <div class="new-post-preview">
-            <time class="new-post-datetime">14 июня 2019</time>
+            <time class="new-post-datetime" datetime="2019-06-14T00:00">14 июня 2019</time>
             <h3 class="new-post-title">
               <a class="new-post-title-link" href="#0">
                 10 мест, ради которых стоит проснуться
@@ -326,7 +331,7 @@
         <article class="new-post">
           <img class="new-post-image" src="images/151.jpg" alt="Йога">
           <div class="new-post-preview">
-            <time class="new-post-datetime">14 июня 2019</time>
+            <time class="new-post-datetime" datetime="2019-06-14T00:00">14 июня 2019</time>
             <h3 class="new-post-title">
               <a class="new-post-title-link" href="#0">
                 Йога для домашних
@@ -338,7 +343,7 @@
         <article class="new-post">
           <img class="new-post-image" src="images/45.jpg" alt="Балкон">
           <div class="new-post-preview">
-            <time class="new-post-datetime">14 июня 2019</time>
+            <time class="new-post-datetime" datetime="2019-06-14T00:00">14 июня 2019</time>
             <h3 class="new-post-title">
               <a class="new-post-title-link" href="#0">
                 Как мы превратили классное место в балкон
@@ -350,7 +355,7 @@
         <article class="new-post">
           <img class="new-post-image" src="images/501.jpg" alt="Подход">
           <div class="new-post-preview">
-            <time class="new-post-datetime">14 июня 2019</time>
+            <time class="new-post-datetime" datetime="2019-06-14T00:00">14 июня 2019</time>
             <h3 class="new-post-title">
               <a class="new-post-title-link" href="#0">
                 Кулинарный подход к науке
@@ -362,7 +367,7 @@
         <article class="new-post">
           <img class="new-post-image" src="images/7.jpg" alt="Прически">
           <div class="new-post-preview">
-            <time class="new-post-datetime">14 июня 2019</time>
+            <time class="new-post-datetime" datetime="2019-06-14T00:00">14 июня 2019</time>
             <h3 class="new-post-title">
               <a class="new-post-title-link" href="#0">
                 Лучшие прически для распущенных волос
@@ -372,11 +377,11 @@
         </article>
         
   <!--       форма поиска -->
-        <form class="form-search" action="">
+        <form class="form-search" action="#">
           <label for="search-field" class="visually-hidden">Поиск</label>
           <input id="search-field" class="input-field" type="search" placeholder="Найти..." required>
           <button type="submit" class="submit-btn search-btn">
-            <p class="visually-hidden">Найти текст</p>
+            <span class="visually-hidden">Найти текст</span>
           </button>
         </form>
           
@@ -385,7 +390,7 @@
   <!--     блок подписки-->
       <section class="subscribe-section aside-section">
         <h2 class="section-title aside-title">Рассылка</h2>
-        <form class="form-email" action="">
+        <form class="form-email" action="#">
           <label for="email-field" class="visually-hidden">Введите Ваш e-mail</label>
           <input id="email-field" class="input-field" type="email" placeholder="Ваш email адрес">
           <button type="submit" class="submit-btn subscribe-btn">Подписаться</button>
@@ -397,22 +402,22 @@
         <h2 class="section-title aside-title">Теги</h2>
         
         <ul class="tag-container">
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Fashion</a>
           </li>
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Music</a>
           </li>
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Lifestyle</a>
           </li>
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Art</a>
           </li>
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Interior</a>
           </li>
-          <li class="tag-box tag-box-upper">
+          <li class="tag-box">
             <a class="tag-link" href="">Travel</a>
           </li>
           <li class="tag-box">
@@ -457,6 +462,7 @@
       </section>  <!-- theme-section -->
       
     </aside>
+  </div>   <!-- содержимое страницы -->  
 
   <!-- Наши изделия -->
 
@@ -465,10 +471,18 @@
 
       <div class="products">
         <article class="product">
-          <img class="product-img" src="images/shop-item-desk1.jpg" alt="Превью товара">
+          <picture class="product-img">
+            <source srcset="images/shop-item-desk1.jpg"
+                    media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet1.jpg"
+                    media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="images/shop-item-mobile1.jpg"
+                    media="(max-width: 640px)">
+            <img src="images/shop-item-desk1.jpg" alt="Превью товара">
+          </picture>
           
           <div class="product-content">
-            <h3 class="product-title">Подушки на диван</h3>
+            <h3 class="article-title product-title">Подушки на диван</h3>
             <div class="product-description">
               <p class="article-paragraph">Набор из двух подушек с модными принтами. Видео о создании 
                 <a class="description-link" href="#0">здесь.</a>
@@ -491,10 +505,18 @@
         </article>
 
         <article class="product">
-          <img class="product-img" src="images/shop-item-desk2.jpg" alt="Превью товара">
-          
+          <picture class="product-img">
+            <source srcset="images/shop-item-desk2.jpg"
+                    media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet2.jpg"
+                    media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="images/shop-item-mobile2.jpg"
+                    media="(max-width: 640px)">
+            <img src="images/shop-item-desk2.jpg" alt="Превью товара">
+          </picture>
+
           <div class="product-content">
-            <h3 class="product-title">Кукла «Зайчик»</h3>
+            <h3 class="article-title product-title">Кукла «Зайчик»</h3>
             <div class="product-description">
               <p class="article-paragraph">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена 
                 <a class="description-link" href="#0">весенняя серия постов</a>
@@ -518,10 +540,18 @@
         </article>
 
         <article class="product">
-          <img class="product-img" src="images/shop-item-desk3.jpg" alt="Превью товара">
-          
+          <picture class="product-img">
+            <source srcset="images/shop-item-desk3.jpg"
+                    media="(min-width: 1200px)">
+            <source srcset="images/shop-item-tablet3.jpg"
+                    media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="images/shop-item-mobile3.jpg"
+                    media="(max-width: 640px)">
+            <img src="images/shop-item-desk3.jpg" alt="Превью товара">
+          </picture>
+
           <div class="product-content">
-            <h3 class="product-title">Шестиугольная рамка</h3>
+            <h3 class="article-title product-title">Шестиугольная рамка</h3>
             <div class="product-description">
               <p class="article-paragraph">Необычная рамка для украшения дома из видео  
                 <a class="description-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>              
@@ -543,10 +573,8 @@
           </div>
         </article>
       </div>
-    </section> <!-- products-section -->
-    
-  </div>   <!-- содержимое страницы -->
-    
+    </section> <!-- products-section -->    
+   
   <!-- ПОДВАЛ -->
   <footer class="footer">
     
@@ -580,7 +608,7 @@
     <div class="popup-content">
       <h2 class="section-title popup-title">Ваш фидбек</h2>
       
-      <form class="form-feedback" action="">
+      <form class="form-feedback" action="#">
         
         <div class="feedback-group">
           <label for="select-field" class="feedback-label">Как часто вы заходите на сайт?</label>
@@ -606,14 +634,14 @@
 
         <div class="feedback-group">
           <label for="text-field" class="feedback-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-          <textarea id="text-field" class="input-field textarea" type="text-area" placeholder="Может, больше рецептов?" required></textarea>
+          <textarea id="text-field" class="input-field textarea" placeholder="Может, больше рецептов?" required></textarea>
         </div>
       </form>
       
       <button type="submit" class="submit-btn popup-btn">Отправить</button>
       
     </div>
-  </div>
+  </div> <!-- Всплывающее окно-->
 
 </body>
 </html>
